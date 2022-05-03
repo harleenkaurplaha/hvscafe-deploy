@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+html {
+ scroll-behavior: smooth;
+}
+/* header*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+}
+
+.header a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items li a {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  
+  transition: background 0.3s ease-in-out;
+}
+
+.menu-items li a:hover {
+  background-color: #ccc7d3;
+}
+
+/* nav menu button */
+.menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-btn__lines,
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: #111111;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  content: "";
+  position: absolute;
+}
+.menu-btn__lines::before {
+  transform: translateY(-0.5rem);
+}
+.menu-btn__lines::after {
+  transform: translateY(0.5rem);
+}
+body{
+font-family: 'Montserrat',sans-serif;
+} 
+.form-control{
+ margin-bottom: 10px;
+}
+
+.navbar{
+  background-color: transparent;
+}
+.navbar-brand {
+ padding-top: 30px;
+ font-weight: bold;
+ color: white;
+ font-size: 18px;
+}
+.navbar-brand:hover{
+ color: red;
+}
+.navbar-nav > li > a{
+ padding-top: 30px;
+ font-weight: bold;
+ color: white;
+}
+.navbar-nav > li > a:hover{
+ color: red;
+}
+li a {
+ padding-left: 22px;
+ padding-right: 22px;
+}
+#para{
+ padding-top: 250px;
+ }
+#para h1{
+ font-weight: bold;
+ font-size: 3em;
+ line-height: 50px;
+ padding-bottom: 30px;
+}
+#para h3{
+ font-size: 14px;
+ letter-spacing: 2px;
+ font-weight: bold;
+}
+#box1{
+ padding: 10px 25px;
+ background: transparent;
+ text-decoration: none;
+ border: 1px solid #ffffff;
+}
+/*about us*/
+#about{
+ padding: 100px 0;
+}
+#about-img {
+ position: absolute;
+}
+#about-info{
+ padding-bottom: 20px;
+}
+.header-nav {
+ vertical-align: middle;
+ height: auto;
+ background-image: url("../img/slider-image3.jpg");
+ min-height: 100vh;
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+/* item-tiles*/
+#menu{
+ padding: 50px 0 100px 0;
+}
+#hh1{
+ text-align: center;
+ padding-bottom: 30px;
+ font-weight: bold;
+}
+#coffee-tile, #desserts-tile, #drinks-tile {
+ height: 250px;
+ width: 100%;
+ margin-bottom: 15px;
+ position: relative;
+ border: 2px solid #000000;
+ overflow: hidden;
+}
+#coffee-tile:hover, #desserts-tile:hover, #drinks-tile:hover {
+ box-shadow: 0 1px 5px 1px #000000;
+}
+#coffee-tile {
+ background: url('../img/M.jpg') no-repeat;
+ background-position: center;
+}
+#desserts-tile {
+ background: url('../img/dessert.jpg') no-repeat;
+ background-position: center;
+}
+#drinks-tile {
+ background: url('../img/drink.jpg') no-repeat;
+ background-position: center;
+}
+#coffee-tile span, #desserts-tile span, #drinks-tile span {
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ width: 100%;
+ text-align: center;
+ text-transform: uppercase;
+ /*font-family: 'Segoe Script',sans-serif;*/
+ font-weight: bold;
+ font-size: 1.6em;
+ background-color: #000;
+ color: #fff;
+ opacity: .8;
+}
+/*End of item tiles*/
+/*map*/
+.map{
+ margin-top: 65px;
+}
+#map {
+ height: 250px;
+ width: 100%;
+ position: relative;
+ /*border: 2px solid #3F0C1F;*/
+}
+#map:hover{
+ box-shadow: 0 1px 5px 1px #cccccc;
+}
+#reserve{
+ padding: 100px 20px;
+}
+/*FOOTER*/
+.panel-footer {
+ margin-top: 30px;
+ padding-top: 35px;
+ padding-bottom: 30px;
+ background-color: #222;
+ border-top: 0;
+ color: white;
+}
+.panel-footer div.row {
+ margin-bottom: 35px;
+}
+#hours, #address {
+ line-height: 2;
+}
+#hours > span, #address > span {
+ font-size: 1.3em;
+}
+#address p {
+ color: #557c3e;
+ font-size: .8em;
+ line-height: 1.8;
+}
+#testimonials {
+ font-style: italic;
+}
+#testimonials p:nth-child(2) {
+ margin-top: 25px;
+}
+/*small */
+@media (max-width: 767px){
+ /*footer*/
+ .panel-footer section{
+ text-align: center;
+ margin-bottom: 30px;
+ }
+}
+/*extra small*/
+@media (max-width: 479px){
+}
